@@ -13,13 +13,14 @@
       <p class="text-light mb-0 fs-6" > <i class="bi bi-telephone-fill"></i>  Nuestras lineas de atencion -(602)-725-1000</p>
     </header>
     <!-- NAVAR O MENU DE INICIO -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid d-flex justify-content-center">
-          <a class="navbar-brand  align-items-center" href="#">
-              <img src="../../public/img/logo2.jpg" alt="logo" height="100"  style="margin-right: 10px" > 
-          </a>
-      </div>
-  </nav>
+  <!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="../../public/img/logo2.jpg" width="150" height="50" alt=""  class="d-inline-block align-top" >
+  </a>
+  
+          
+ </nav>
     
 </body>
 </html>

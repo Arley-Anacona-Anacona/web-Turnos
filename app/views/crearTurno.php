@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/registrarEmpleado.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
-    
+    <script src="../turno.js"></script>
     <title>Document</title>
 </head>
 <?php
@@ -63,4 +63,5 @@
       
   ?>
 </body>
+
 </html>

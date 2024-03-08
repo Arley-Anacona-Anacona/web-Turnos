@@ -96,6 +96,13 @@
           // Devolver el resultado
           return $exito;
         }
+        
+        public function salir(){
+          unset($_SESSION['email']);
+          session_destroy();
+          header("refresh:3 url=../../index.php");
+          echo "Cerrando sesión...";
+        }
 
     }
 

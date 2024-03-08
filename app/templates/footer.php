@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Copyright © 2024 All rights reserved | by Arley Q & Jineth M.</p>
+            <p>Copyright © 2024 All rights reserved | by Arley A & Jineth M.</p>
         </div>
     </footer>
     
