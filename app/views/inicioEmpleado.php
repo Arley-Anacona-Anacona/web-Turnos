@@ -7,11 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
+    
     <link rel="stylesheet" type="text/css" href="../../public/css/inicioEmpleado.css">
     <title>Inicio</title>
 </head>
 <body>
-    <h1>holaaaaaaaaaaaaaaaaaaa</h1>
+    
 <?php
      require_once ("../models/empleado.php");
        require_once("../models/turnos.php");
