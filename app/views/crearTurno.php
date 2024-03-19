@@ -13,6 +13,7 @@
  require_once("../templates/header.php");
 ?>
 <body>
+    
 <div class="d-flex flex-row justify-content-center py-5 shadow-lg">
     <div class="container-form">
         <div class="information">

@@ -1,7 +1,7 @@
 <?php
 require_once("../models/asignarTurno.php");
 
-  $turno = new Turno ();  
+  $turno = new asignarTurno ();  
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

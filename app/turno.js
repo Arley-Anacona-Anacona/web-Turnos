@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let	form_modal =document.getElementById('form-modal');
     // Create an input element
 	const input = document.createElement('input');
-
+	input.setAttribute("name", 'id_turno');
+	//console.log(input);
 	
     modalForm.addEventListener('show.bs.modal', function(event) {
     	//event.preventDefault();
@@ -11,14 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
         var turnoId = button.getAttribute('data-id');
         // Assign a value to the input element
 		input.type ="number";
-		//input.style.display = "none";
+		input.name="id_turno";
+		input.style.display = "none";
+		//input.setAttribute("name", 'id_turno');
 		input.setAttribute("value", `${turnoId}`);
 	// Append the input element to the form
 		form_modal.appendChild(input);
-        console.log(turnoId);
+        //console.log(turnoId);
     });
 });
-
+console.log("hola mundo");
 
 
 

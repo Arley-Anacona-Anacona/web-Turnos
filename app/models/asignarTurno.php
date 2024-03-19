@@ -1,7 +1,7 @@
 <?php
  require_once("../../conexion/conexion.php");
 
- class Turno extends Conexion{
+ class AsignarTurno extends Conexion{
      
     function __construct(){
         $this->db = parent::__construct();
@@ -33,7 +33,31 @@
         }
     }
 
+    function asignarTurno ($id_turno, $id_empleado,$comentario){
+         try {
+            $db = $this->db; // Acceder a la conexión a la base de datos
+
+         
+            $sql = "INSERT INTO  turno_empleados(id_turno, id_empleado, comentario)  VALUES (:id_turno,:id_empleado,:comentario)";
+
+            $stmt = $db->prepare($sql);
+
+            $stmt->execute([
+                ':id_turno' => $id_turno,
+                ':id_empleado' => $id_empleado,
+                ':comentario' => $comentario,          
+            ]);
+
+            return true;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
  
-}
+}   
+
+$asignar=new AsignarTurno();
+$asignar->asignarTurno(4,12,"hola");
+
 
 ?>

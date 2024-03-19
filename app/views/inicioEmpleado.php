@@ -11,6 +11,7 @@
     <title>Inicio</title>
 </head>
 <body>
+    <h1>holaaaaaaaaaaaaaaaaaaa</h1>
 <?php
      require_once ("../models/empleado.php");
        require_once("../models/turnos.php");
@@ -64,14 +65,14 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="form-modal">
+                            <form id="form-modal" method="POST" action="../controllers/asignarTurno.php">
                                 <div class="mb-3 empleado-container">
                                     <label for="tipoTurno" class="form-label">Dispensador</label>
-                                    <select class="form-select" id="tipoTurno">
+                                    <select name="id_empleado" class="form-select" id="tipoTurno">
                                         <?php
                                         foreach($empleados as $empleado){
                                             ?>
-                                            <option value="<?= $empleado['id_empleado'] ?>"><?= $empleado['nombres'] ?></option>
+                                            <option  value="<?= $empleado['id_empleado'] ?>"><?= $empleado['nombres'] ?></option>
                                             <?php
                                         }
                                         ?>
@@ -79,7 +80,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="comentario" class="form-label">Comentario</label>
-                                    <input type="text" class="form-control" id="comentario">
+                                    <input name="comentario" type="text" class="form-control" id="comentario">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Asignar</button>
                             </form>
